@@ -20,6 +20,7 @@ class BlogPostTemplate extends React.Component {
           className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}
         >
           <header className="post-content-header">
+            <h2>{post.frontmatter.date}</h2>
             <h1 className="post-content-title">{post.frontmatter.title}</h1>
           </header>
 
